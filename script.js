@@ -161,19 +161,6 @@ Swal.queue([{
         function cssile() {
             Swal.fire('Öylesine Bir Mesaj')
             }
-
-function uyari() {
-  
-      Swal.fire({
-      icon: 'info',
-      title: 'UYARI',
-      text: "Site demodur! Hata/Öneri'niz var ise discorddan bildirebilirsiniz. ",
-      confirmButtonColor:"#11bdac",
-      confirmButtonText: "Tamam."
-    })
-
-}
-
 function success() {  
   Swal.fire({
   icon: 'success',
@@ -209,13 +196,3 @@ function question() {
   confirmButtonText: "Tamam."
 })
 }
-
-function yakinda() {
-    Swal.fire({
-      icon: 'error',
-      title: 'Dikkat',
-      text: 'Bu sayfa yakında kullanıma açılacak!',
-      confirmButtonColor:"#11bdac",
-      confirmButtonText: "Tamamdır"
-    })
-    }
