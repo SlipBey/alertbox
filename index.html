@@ -1,0 +1,230 @@
+<html lang="tr">
+<head>
+<!-- bilgiler -->
+<title>Slip_Bey SweetAlert Tasarımları</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Slipnkot#2494"> <!--Discord-->
+<link rel="shortcut icon" href="https://cdn.glitch.com/a1b151f7-5183-4923-830f-62fecccf39a3%2F290dcfb8-f6f8-4824-b1e4-bb40217b115e.image.png?v=1615797972329" type="image/x-icon">
+<meta name="description" content="Sweet Alert isimli alert scriptinin kullanım örnekleri!" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- cssler -->
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="fonts.css" />
+<link rel="stylesheet" href="relative.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
+<!-- scriptler -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="script.js"></script>
+</head>
+  
+<body onload = "uyari()">
+  
+  <div class="title_text">
+    <h3>
+      Sweet Alert Tasarımları
+    </h3>
+    <hr>
+  </div>
+  <div class="description_text">
+    <div class="social_info" left>
+    <h3>
+      Sosyal Medya Hesaplarım:
+      <br>
+      <a class="tooltip" href="https://youtube.com/c/AngelCraftNW" target="_blank"><button class="social_button" youtube> <i class="fab fa-youtube fa-2x"></i> </button> <span class="tooltiptext">Youtube</span></a>
+      <a class="tooltip" href="https://slipyme.xyz/discord" target="_blank"><button class="social_button" discord> <i class="fa fa-discord fa-2x"></i> </button><span class="tooltiptext">Discord</span></a>
+      <a class="tooltip" href="https://github.com/SlipBey" target="_blank"><button class="social_button" github> <i class="fa fa-github fa-2x"></i> </button><span class="tooltiptext">Github</span></a>
+      </h3>
+      <h5>
+ <center><iframe src="https://www.youtube.com/embed/aSaFxTaRa3w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>       
+      </h5>
+    </div>
+    <div class="sweet_info" right>
+    <h3>
+      Sweet Alert Bilgileri:
+      <br>
+      <a href="https://sweetalert.js.org/" target="_blank">Sitesine Gitmek İçin Tıkla</a>
+      </h3>
+    </div>
+  </div>
+<br><br><br><br><hr class="two_hr">
+
+<div class="margin_center">
+  <h3 class="info_text"><p>Dikkat:</p> 
+    <a href="bilgilendirme.html">Bilgiler İçin Tıkla</a>
+    <br>
+    <a onClick="yakinda()">Metodlar İçin Tıkla</a>
+  </h3>  
+</div>
+  
+  <h3>Örnekler:</h3>
+
+<div class="sample_text">
+   <h3>Onaylanma Mesajı: <button class="try_button" onClick="onayli()">İncele</button> </h3> 
+     <pre>  Swal.fire({
+        icon: 'success',
+        title: 'Başarılı!',
+        text: 'Yaptığın İşlem Başarıyla Tamamlandı!',
+        confirmButtonColor:"#11bdac",
+        confirmButtonText: "Tamamdır"
+      })</pre>
+    <h3>Reddedilme Mesajı: <button class="try_button" onClick="redli()">İncele</button> </h3> 
+        <pre> Swal.fire({
+            icon: 'error',
+            title: 'Hopp!',
+            text: 'Hatalı işlem uygulandı!',
+            confirmButtonColor:"#11bdac",
+            confirmButtonText: "Tamamdır"
+          })</pre>
+     <h3>Soru Mesajı: <button class="try_button" onClick="sorulu()">İncele</button> </h3> 
+           <pre>  Swal.fire({
+              icon: 'question',
+              title: 'Bir Saniye',
+              text: 'Devam Etmek İstiyor Musun?',
+              confirmButtonColor:"#11bdac",
+              confirmButtonText: "Evet"
+            })</pre>
+      <h3>Bilgi Mesajı: <button class="try_button" onClick="bilgili()">İncele</button> </h3> 
+     <pre>    Swal.fire({
+            icon: 'info',
+            title: 'Dikkat!',
+            text: 'Buradan sonrası hazır değil.',
+            confirmButtonColor:"#11bdac",
+            confirmButtonText: "Devam Et"
+          })
+       </pre>
+       <h3>Footer Tasarımı: <button class="try_button" onClick="ayakli()">İncele</button> </h3> 
+       <pre>
+        Swal.fire({
+            title: 'Webmaster',
+            text: 'Slipknot#2494 (discord)',
+            confirmButtonColor:"#11bdac",
+            confirmButtonText: "Napim",
+            footer: 'Design By Slip_Bey'
+          })
+        </pre>
+        <h3>Evet Hayır: <button class="try_button" onClick="evthyr()">İncele</button> </h3> 
+        <pre>
+        Swal.fire({
+            title: 'Bir Saniye',
+            text: "Hangisini Tercih Ediyorsun?",
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sil',
+            cancelButtonText: 'Silme!'
+            }).then((result) => {
+        if (result.isConfirmed) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Başarılı!',
+            text: 'Yaptığın İşlem Başarıyla Tamamlandı!',
+            confirmButtonColor:"#11bdac",
+            confirmButtonText: "Tamamdır"
+        })
+        }
+    })
+         </pre>
+         <h3>Resimli: <button class="try_button" onClick="resimli()">İncele</button> </h3> 
+         <pre>
+var rsm = "pengufoto.png"
+
+Swal.fire({
+title: 'Penguenler Hakkında',
+text: 'Penguenler Bir Dinazordur(!)',
+imageUrl: rsm,
+imageWidth: 400,
+imageHeight: 200,
+imageAlt: 'Custom image',
+confirmButtonColor: '#11bdac',
+confirmButtonText: 'Tamam',
+})
+          </pre>
+          <h3>Sorulu: <button class="try_button" onClick="sorulumu()">İncele</button> </h3> 
+          <pre>
+Swal.mixin({
+input: 'text',
+confirmButtonText: 'İlerle &rarr;',
+showCancelButton: true,
+progressSteps: ['1', '2', '3']
+}).queue([
+{
+title: 'Soru 1',
+text: 'Adın Ne'
+}, {
+title: 'Soru 2',
+text: 'Yaşın kaç'
+}, {
+title: 'Soru 3',
+text: 'Mesleğin ne'
+}
+]).then((result) => {
+if (result.value) {
+const cevaplar = JSON.stringify(result.value)
+Swal.fire({
+icon: success,
+title: 'Başarılı!',
+html: `Cevapların: <br> ${cevaplar} `,
+confirmButtonColor: '#3085d6',
+confirmButtonText: 'Tamamdır',
+cancelButtonText: 'Silme!',
+cancelButtonColor: '#d33'
+})
+}
+})
+           </pre>
+           <h3>IP Adresini Çekme: <button class="try_button" onClick="ipadres()">İncele</button> </h3> 
+           <pre>
+const ipAPI = '//api.ipify.org?format=json'
+Swal.queue([{
+title: 'IP Adresini Görmek ister misin ?',
+confirmButtonColor: '#3085d6',
+confirmButtonText: 'Gör',
+text: 'Görmek İstersen Tıkla!',
+showLoaderOnConfirm: true,
+preConfirm: () => {
+return fetch(ipAPI)
+.then(response => response.json())
+.then(data => Swal.insertQueueStep(data.ip))
+.catch(() => {
+Swal.insertQueueStep({
+icon: 'error',
+title: 'İşlem Başarısız!',
+text: 'IP Adresinizi Çekemedim!',
+confirmButtonColor:"#11bdac",
+confirmButtonText: "Tamamdır"
+})
+})
+}
+}])
+</pre>
+</div>
+<br><br>
+</body>
+  
+  <style>
+    .swal2-popup {
+    background-color: #252525;
+    color: #fff;
+    border-radius: 1rem;
+  }
+    .swal2-title, .swal2-content {
+    color: white;
+  }
+</style>
+<footer>
+    <p style="margin-left: 5px;" left>
+        <a class="slip" href="https://slipyme.xyz" target="_blank"><button class="footer_button"> Slipyme </button><span class="sliptext">Yapımcı</span></a>
+    </p>
+    <p style="margin-right: 10px;" right>
+        <a class="tool" href="https://youtube.com/c/AngelCraftNW" target="_blank"><button class="social_button" youtube> <i class="fab fa-youtube fa-2x"></i> </button><span class="tooltext">Youtube</span></a>
+        <a class="tool" href="https://slipyme.xyz/discord" target="_blank"><button class="social_button" discord> <i class="fa fa-discord fa-2x"></i> </button><span class="tooltext">Discord</span></a>
+        <a class="tool" href="https://github.com/SlipBey" target="_blank"><button class="social_button" github> <i class="fa fa-github fa-2x"></i> </button><span class="tooltext">Github</span></a>
+    </p>
+  </footer>
+</html>

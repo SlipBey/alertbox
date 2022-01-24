@@ -1,0 +1,182 @@
+<html lang="tr">
+<head>
+<!-- bilgiler -->
+<title>Slip_Bey SweetAlert Tasarımları</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Slipnkot#2494"> <!--Discord-->
+<link rel="shortcut icon" href="https://cdn.glitch.com/a1b151f7-5183-4923-830f-62fecccf39a3%2F290dcfb8-f6f8-4824-b1e4-bb40217b115e.image.png?v=1615797972329" type="image/x-icon">
+<meta name="description" content="Sweet Alert isimli alert scriptinin kullanım örnekleri!" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta itemprop="image" content="https://cdn.glitch.com/a1b151f7-5183-4923-830f-62fecccf39a3%2F290dcfb8-f6f8-4824-b1e4-bb40217b115e.image.png?v=1615797972329"/>
+<!-- cssler -->
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="fonts.css" />
+<link rel="stylesheet" href="relative.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
+<!-- scriptler -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="script.js"></script>
+</head>
+  
+<body onload = "uyari()">
+  
+  <div class="title_text">
+    <h3>
+      Sweet Alert Tasarımları
+    </h3>
+    <hr>
+  </div>
+  <div class="description_text">
+    <div class="social_info" left>
+    <h3>
+      Sosyal Medya Hesaplarım:
+      <br>
+      <a class="tooltip" href="https://youtube.com/c/AngelCraftNW" target="_blank"><button class="social_button" youtube> <i class="fab fa-youtube fa-2x"></i> </button> <span class="tooltiptext">Youtube</span></a>
+      <a class="tooltip" href="https://slipyme.xyz/discord" target="_blank"><button class="social_button" discord> <i class="fa fa-discord fa-2x"></i> </button><span class="tooltiptext">Discord</span></a>
+      <a class="tooltip" href="https://github.com/SlipBey" target="_blank"><button class="social_button" github> <i class="fa fa-github fa-2x"></i> </button><span class="tooltiptext">Github</span></a>
+      </h3>
+      <h5>
+ <center><iframe src="https://www.youtube.com/embed/aSaFxTaRa3w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>       
+      </h5>
+    </div>
+    <div class="sweet_info" right>
+    <h3>
+      Sweet Alert Bilgileri:
+      <br>
+      <a href="https://sweetalert.js.org/" target="_blank">Sitesine Gitmek İçin Tıkla</a>
+      </h3>
+    </div>
+  </div>
+<br><br><br><br><hr class="two_hr">
+
+<div class="margin_center">
+  <h3 class="info_text"><p>Dikkat:</p> 
+    <a href="index.html">Örnekler İçin Tıkla</a>
+    <br>
+    <a onClick="yakinda()">Metodlar İçin Tıkla</a>
+  </h3>  
+</div>
+  <h3 class="none-text">İndirme</h3>
+
+<div class="sample_text-one">
+   <h3>HTML</h3> 
+ <pre>&lt;script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"&gt;
+&lt;/script&gt; </pre>
+    <h3>Nodejs</h3>
+<pre><code><span class="unselectable">$ </span>npm install sweetalert --save</code></pre>
+</div>
+
+<h3 class="none-text">Kullanımlar:</h3>
+
+<div class="none_text"><h3>GEÇİCİ SÜRELİĞİNE MOBİLDE KODLAR GÖSTERİLMEYECEKTİR!</h3></div>
+
+<div class="sample_text">
+    <h3>Butona Basınca Çalıştırma </h3> 
+    <h5>Neyde kullanacağınızı seçin! <br> Ben buton üzerinden gideceğim.</h5>
+<pre>&lt;button class="btn btn-info"&gt;&lt;/button&gt;</pre>
+<h5>Bu butona mouse'a basınca eventini yani: <br></h5>
+<pre>onClick</pre>
+<h5>Eventini ekliyorum.</h5>
+<pre>&lt;button class="btn btn-info" onClick="tikla()"&gt;&lt;/button&gt;</pre>
+<h5>Şimdi "tikla" eventini çalıştıralım.</h5>
+<pre>&lt;script&gt;
+function tikla() {
+Swal.fire('Öylesine Bir Mesaj')
+}
+&lt;/script&gt; </pre>
+<h5>Test Edelim: <button class="try_button" onClick="tikla()">Test Et</button> </h5>
+
+<h3>Tasarım Değiştirme </h3> 
+<h5>Css ile renk değiştirimi yapacağız!</h5>
+
+<pre>&lt;script&gt;
+    function cssile() {
+    Swal.fire('Öylesine Bir Mesaj')
+    }
+&lt;/script&gt; </pre>
+<h5>Bu kodun css temelini alalım birde!</h5>
+
+<pre>&lt;style&gt;
+    .swal2-popup {
+    background-color: #252525;
+    color: #fff;
+    border-radius: 1rem;
+  }
+    .swal2-title, .swal2-content {
+    color: #fff;
+  }
+&lt;/style&gt;</pre>
+<h5>Test Edelim: <button class="try_button" onClick="cssile()">Test Et</button> </h5>
+   
+<h3>TEMALAR:</h3>
+<a class="themes_a" href="https://github.com/sweetalert2/sweetalert2-themes">Tema Kodları</a>
+
+<h5>Örnekler</h5>
+
+<h5>Dark</h5>
+<img class="themes_img" src="https://sweetalert2.github.io/images/themes-dark.png">
+<h5>Minimal</h5>
+<img class="themes_img" src="https://sweetalert2.github.io/images/themes-minimal.png">
+<h5>Borderless</h5>
+<img class="themes_img" src="https://sweetalert2.github.io/images/themes-borderless.png">
+<h5>Bootstrap 4</h5>
+<img class="themes_img" src="https://sweetalert2.github.io/images/themes-bootstrap-4.png">
+<h5>Bulma</h5>
+<img class="themes_img" src="https://sweetalert2.github.io/images/themes-bulma.png">
+<h5>Material UI</h5>
+<img class="themes_img" src="https://sweetalert2.github.io/images/themes-material-ui.png">
+<h5>WordPress Admin</h5>
+<img class="themes_img" src="https://sweetalert2.github.io/images/themes-wordpress-admin.png">
+
+<h5>Kurma</h5>
+<h5 style="color:white;">npm install @sweetalert2/TEMA İSMİ | Şeklinde kuruluyor. Örnek:</h5>
+<pre><code><span class="unselectable">$ </span>npm install @sweetalert2/theme-dark</code></pre>
+
+<pre style="font-size: 14px;">
+&lt;link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css"&gt;
+&lt;script src="sweetalert2/dist/sweetalert2.min.js"&gt;
+&lt;/script&gt;
+</pre>
+
+<h3>İKONLAR</h3> 
+  <h3>success: <button class="try_button" onClick="success()">İncele</button> </h3> 
+  <img class="icon_img" src="https://cdn.discordapp.com/attachments/804988114359681054/821351378550784010/bandicam_2021-03-16_14-41-41-687_prev_ui.png">
+  <h3>error: <button class="try_button" onClick="error()">İncele</button> </h3> 
+  <img class="icon_img" src="https://cdn.discordapp.com/attachments/804988114359681054/821351379972653117/bandicam_2021-03-16_14-41-46-598_prev_ui.png">
+  <h3>warning: <button class="try_button" onClick="warning()">İncele</button> </h3> 
+  <img class="icon_img" src="https://cdn.discordapp.com/attachments/804988114359681054/821351381670690886/bandicam_2021-03-16_14-41-51-294_prev_ui.png">
+  <h3>info: <button class="try_button" onClick="info()">İncele</button> </h3> 
+  <img class="icon_img" src="https://cdn.discordapp.com/attachments/804988114359681054/821351383059922974/bandicam_2021-03-16_14-41-57-923_prev_ui.png">
+  <h3>question: <button class="try_button" onClick="question()">İncele</button> </h3>
+  <img class="icon_img" src="https://cdn.discordapp.com/attachments/804988114359681054/821351377631444992/bandicam_2021-03-16_14-42-06-857_prev_ui.png">
+
+</div>
+
+<style>
+    .swal2-popup {
+    background-color: #252525;
+    color: #fff;
+    border-radius: 1rem;
+  }
+    .swal2-title, .swal2-content {
+    color: #fff;
+  }
+</style>
+<br><br>
+</body>
+<footer>
+    <p style="margin-left: 5px;" left>
+        <a class="slip" href="https://slipyme.xyz" target="_blank"><button class="footer_button"> Slipyme </button><span class="sliptext">Yapımcı</span></a>
+    </p>
+    <p style="margin-right: 10px;" right>
+        <a class="tool" href="https://youtube.com/c/AngelCraftNW" target="_blank"><button class="social_button" youtube> <i class="fab fa-youtube fa-2x"></i> </button><span class="tooltext">Youtube</span></a>
+        <a class="tool" href="https://slipyme.xyz/discord" target="_blank"><button class="social_button" discord> <i class="fa fa-discord fa-2x"></i> </button><span class="tooltext">Discord</span></a>
+        <a class="tool" href="https://github.com/SlipBey" target="_blank"><button class="social_button" github> <i class="fa fa-github fa-2x"></i> </button><span class="tooltext">Github</span></a>
+    </p>
+  </footer>
+</html>

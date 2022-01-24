@@ -1,0 +1,286 @@
+/*temel tasarımlar*/
+body {
+    background-color: #424141;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+  }
+  .title_text {
+    text-align: center;
+  }
+  .title_text h3 {
+    color: white;
+  }
+  hr {
+    background-color: #2d2e30;
+  }
+  [right] {
+    float: right;
+  }
+  [left] {
+    float: left;
+  }
+  .sweet_info, .social_info {
+    color: white;
+  }
+  .sweet_info a {
+    color: #14a8a1;
+  }
+  .sweet_info a:hover, .sweet_info a:active {
+    color: #104d4a;
+  }
+  .sweet_info a:focus {
+    color: #508f8c;
+  }
+  a {
+    text-decoration: none;
+  }
+  .social_button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: #fff;
+      line-height: 1;
+      cursor: pointer;
+      text-align: center;
+      border-color: black;
+  }
+  .social_button:active, .social_button:focus, .social_button:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .social_button i {
+    color: white;
+  }
+  [youtube] {
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+  [github] {
+    background-color: #161b22;
+    border-color: #161b22;
+  }
+  [discord] {
+    background-color: #5f76c3;
+    border-color: #5f76c3;
+  }
+  .two_hr {
+    text-align: center; 
+    margin: auto; 
+    width: 100%;
+  }
+  .margin_center {
+      text-align: center;
+  }
+  .try_button {
+      width: 150px;
+      border-radius: 10px;
+      height: 35px;
+      text-align: center;
+      color: white;
+      background-color: #11bdac;
+      border-color: black;
+  }
+  .try_button:hover, .try_button:active, .try_button:focus {
+    background-color: #107791;
+}
+.info_text {
+    color: white;
+}
+.info_text a {
+    color: #14a8a1;;
+}
+.info_text a:hover {
+    color: #508f8c;
+}
+.sample_text {
+    position: relative;
+    top: 20px;
+}
+
+pre {
+    font-size: 15px;
+    border: 2px solid grey;
+    max-width: 180%;
+    width: 500px;
+    border-left: 12px solid rgb(25, 187, 173);
+    border-radius: 5px;
+    padding: 14px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", 
+"Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
+"Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    word-wrap:break-word;
+  }
+
+.sample_text-one {
+    position: relative;
+    top: 10px;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    background-color: rgb(25, 187, 173);
+    color: white;
+ }
+.footer_button {
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    background-color: #28b30c;
+    border-color: black;
+}
+.footer_button:hover, .footer_button:active, .footer_button:focus {
+    background-color: #123d09;
+}
+
+.tooltip {
+    position: relative;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .tool {
+    position: relative;
+  }
+  
+  .tool .tooltext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+  }
+  
+  .tool .tooltext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+  
+  .tool:hover .tooltext {
+    visibility: visible;
+  }
+
+  .slip {
+    position: relative;
+  }
+  
+  .slip .sliptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 200%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .slip .sliptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .slip:hover .sliptext {
+    visibility: visible;
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #555; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #149496; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #093c3d; 
+  }
+
+  .none_text {
+    display: none; 
+  }
+
+iframe {
+  position: fixed;
+  height: 315px;
+  width: 560px;
+  margin-left: 47%;
+  top: 45%;
+  z-index: 10;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; 
+  color: white;
+}
+.themes_a {
+  color: #14a8a1;
+}
+.themes_a:hover, .themes_a:active {
+  color: #104d4a;
+}
+.themes_a:focus {
+  color: #508f8c;
+}

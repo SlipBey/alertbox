@@ -1,0 +1,58 @@
+@media only screen and (max-width: 768px) {
+
+  /*
+.sample_text, .sample_text-one, .none-text {
+  display: none; 
+}
+*/
+.none_text {
+    display: inline; 
+  }
+
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    background-color: rgb(25, 187, 173);
+    color: white;
+ }
+
+  iframe {
+  position: relative;
+  height: 200px;
+  width: 350px;
+  margin-left: -2px;
+  top: 45%;
+  z-index: 10;
+}
+  
+pre {
+    margin-left: -8;
+    font-size: 10px;
+    border: 2px solid grey;
+    max-width: 180%;
+    width: 318px;
+    border-left: 12px solid rgb(25, 187, 173);
+    border-radius: 5px;
+    padding: 14px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", 
+"Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
+"Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    word-wrap:break-word;
+  }
+
+  .ikon_right {
+    position: relative;
+    right: 20px;
+  }
+
+  .themes_img {
+    width: 250px;
+    height: 120px;
+  }
+  
+}
