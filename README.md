@@ -7,6 +7,8 @@ Temayı özgürce kullanabilirsiniz.
 
 # İletişim
 
-Discord: https://www.slipyme.xyz/discord
-İnstagram: https://www.slipyme.xyz/instagram
-Youtube: https://www.slipyme.xyz/youtube
+Discord: https://www.slipyme.com/discord
+
+İnstagram: https://www.slipyme.com/instagram
+
+Youtube: https://www.slipyme.com/youtube
